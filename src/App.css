@@ -24,3 +24,7 @@
   background-color: rgb(0, 139, 139);
   margin: 0 5px 5px 0;
 }
+
+.tags__span_small {
+  min-width: 60px;
+}

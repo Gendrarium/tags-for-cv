@@ -29,7 +29,9 @@ function App() {
       <div className="tags main__tags">
         {tags.map((i, id) => (
           <span
-            className="tags__span"
+            className={`tags__span${
+              i.text.length < 6 ? ' tags__span_small' : ''
+            }`}
             onMouseEnter={handleMouseEvent.bind(null, id)}
             onMouseLeave={handleMouseEvent.bind(null, null)}
           >
